@@ -1,0 +1,1736 @@
+[
+    {
+        "id": "9eafeed2.d9ba6",
+        "type": "tab",
+        "label": "ventilator",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "552a7dc5.3cd48c",
+        "type": "ha-entity",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka oscilacia on/off ",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": false,
+        "outputs": 2,
+        "entityType": "switch",
+        "config": [
+            {
+                "property": "name",
+                "value": "ventilator_obyvacka_oscilacia"
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": "hass:fan"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            }
+        ],
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "resend": true,
+        "outputLocation": "",
+        "outputLocationType": "none",
+        "inputOverride": "allow",
+        "x": 1290,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "a4bb2e03.5251b",
+        "type": "mqtt in",
+        "z": "9eafeed2.d9ba6",
+        "name": "ventilator stav z MQTT",
+        "topic": "ifan03_u1/stat/RESULT",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "5ef8035b.c7d07c",
+        "x": 160,
+        "y": 1060,
+        "wires": [
+            [
+                "3d2b3eac.8f8892"
+            ]
+        ]
+    },
+    {
+        "id": "e32c3d71.a87ba",
+        "type": "ha-entity",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka off ",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": false,
+        "outputs": 2,
+        "entityType": "switch",
+        "config": [
+            {
+                "property": "name",
+                "value": "ventilator_obyvacka_off"
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": "hass:fan"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            }
+        ],
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "resend": true,
+        "outputLocation": "",
+        "outputLocationType": "none",
+        "inputOverride": "allow",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "ad424de0.4304e",
+        "type": "ha-entity",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 1. rychlost",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": false,
+        "outputs": 2,
+        "entityType": "switch",
+        "config": [
+            {
+                "property": "name",
+                "value": "obyvacka_ventilator_1_rychlost"
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": "hass:fan"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            }
+        ],
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "resend": true,
+        "outputLocation": "",
+        "outputLocationType": "none",
+        "inputOverride": "allow",
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "973f3263.49ecf",
+        "type": "ha-entity",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 2. rychlost",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": false,
+        "outputs": 2,
+        "entityType": "switch",
+        "config": [
+            {
+                "property": "name",
+                "value": "obyvacka_ventilator_2_rychlost"
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": "hass:fan"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            }
+        ],
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "resend": true,
+        "outputLocation": "",
+        "outputLocationType": "none",
+        "inputOverride": "allow",
+        "x": 710,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "431f2310.aab994",
+        "type": "ha-entity",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 3. rychlost",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": false,
+        "outputs": 2,
+        "entityType": "switch",
+        "config": [
+            {
+                "property": "name",
+                "value": "obyvacka_ventilator_3_rychlost"
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": "hass:fan"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": ""
+            }
+        ],
+        "state": "payload",
+        "stateType": "msg",
+        "attributes": [],
+        "resend": true,
+        "outputLocation": "",
+        "outputLocationType": "none",
+        "inputOverride": "allow",
+        "x": 990,
+        "y": 100,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "14899c48.291704",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "power state 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "powerstate",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "fe03851d.c1de58"
+            ]
+        ]
+    },
+    {
+        "id": "ea7ce93.fa1fb18",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "power state 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "powerstate",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "ce179f5e.2647f8"
+            ]
+        ]
+    },
+    {
+        "id": "2d17927.1bdb96e",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "power state 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "powerstate",
+                "pt": "msg",
+                "to": "2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "ce179f5e.2647f8"
+            ]
+        ]
+    },
+    {
+        "id": "7462459e.35345c",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "power state 3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "powerstate",
+                "pt": "msg",
+                "to": "3",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 440,
+        "wires": [
+            [
+                "ce179f5e.2647f8"
+            ]
+        ]
+    },
+    {
+        "id": "c403d41e.a7a0f",
+        "type": "api-current-state",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka oscilacia state",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "switch.ventilator_obyvacka_oscilacia",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": true,
+        "x": 200,
+        "y": 800,
+        "wires": [
+            [
+                "a3f4973.af317e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b7911a74.1388f8",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI state off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "c18aa2d8.d4b338",
+                "34ee4456.43d444",
+                "f255a951.5d8648",
+                "2ce14d53.f6870a"
+            ]
+        ]
+    },
+    {
+        "id": "d7f002de.b2dbf8",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI state off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "ef8b7b25.39d6a",
+                "34ee4456.43d444",
+                "f255a951.5d8648"
+            ]
+        ]
+    },
+    {
+        "id": "2d1f9b6.6628264",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI state off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "ef8b7b25.39d6a",
+                "c18aa2d8.d4b338",
+                "f255a951.5d8648"
+            ]
+        ]
+    },
+    {
+        "id": "f3c55b55.debf58",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI state off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "ef8b7b25.39d6a",
+                "c18aa2d8.d4b338",
+                "34ee4456.43d444"
+            ]
+        ]
+    },
+    {
+        "id": "ef8b7b25.39d6a",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka off state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.ventilator_obyvacka_onoff",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c18aa2d8.d4b338",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 1. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_1_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1050,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34ee4456.43d444",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 2. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_2_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f255a951.5d8648",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 3. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_3_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1050,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6c732ec.ae05e",
+        "type": "server-state-changed",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "switch.ventilator_obyvacka_onoff",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "b7911a74.1388f8",
+                "14899c48.291704"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "e1e733c.f37df5",
+        "type": "server-state-changed",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "switch.obyvacka_ventilator_1_rychlost",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "d7f002de.b2dbf8",
+                "ea7ce93.fa1fb18"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "3fdc573f.4192d8",
+        "type": "server-state-changed",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "switch.obyvacka_ventilator_2_rychlost",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "2d1f9b6.6628264",
+                "2d17927.1bdb96e"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "60f29c53.3d4824",
+        "type": "server-state-changed",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "switch.obyvacka_ventilator_3_rychlost",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "x": 260,
+        "y": 480,
+        "wires": [
+            [
+                "f3c55b55.debf58",
+                "7462459e.35345c"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "78b7ec0b.118f74",
+        "type": "server-state-changed",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "switch.ventilator_obyvacka_oscilacia",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "x": 250,
+        "y": 560,
+        "wires": [
+            [
+                "a3f4973.af317e8"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "on",
+            "off"
+        ]
+    },
+    {
+        "id": "ce179f5e.2647f8",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "powerstate",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 720,
+        "wires": [
+            [
+                "d2f7285b.67faa8"
+            ]
+        ]
+    },
+    {
+        "id": "4858339d.42981c",
+        "type": "mqtt out",
+        "z": "9eafeed2.d9ba6",
+        "name": "ventilator obyvacka",
+        "topic": "ifan03_u1/cmnd/FanSpeed",
+        "qos": "",
+        "retain": "",
+        "broker": "5ef8035b.c7d07c",
+        "x": 1650,
+        "y": 760,
+        "wires": [],
+        "inputLabels": [
+            "msg.topic"
+        ],
+        "icon": "font-awesome/fa-space-shuttle"
+    },
+    {
+        "id": "84d963da.e4899",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "vstup pri zmene stavu prepinacov v UI",
+        "info": "",
+        "x": 210,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8320d8c3.59b8b",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "vystup pri zmene stavu prepinacov v UI",
+        "info": "",
+        "x": 1030,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b784dcac.c78208",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "ovladanie ventilatora cez MQTT",
+        "info": "",
+        "x": 1000,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2ce14d53.f6870a",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator oscilacia state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.ventilator_obyvacka_oscilacia",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1040,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab113636.176728",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI state off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "ef8b7b25.39d6a",
+                "c18aa2d8.d4b338",
+                "34ee4456.43d444",
+                "f255a951.5d8648"
+            ]
+        ]
+    },
+    {
+        "id": "d2f7285b.67faa8",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1260,
+        "y": 720,
+        "wires": [
+            [
+                "4858339d.42981c"
+            ]
+        ]
+    },
+    {
+        "id": "fe03851d.c1de58",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "powerstate",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 760,
+        "wires": [
+            [
+                "4858339d.42981c"
+            ]
+        ]
+    },
+    {
+        "id": "601311c2.3ef938",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "vytvorenie switchov v UI",
+        "info": "",
+        "x": 160,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7d274861.8eb838",
+        "type": "random",
+        "z": "9eafeed2.d9ba6",
+        "name": "generate speed",
+        "low": "1",
+        "high": "3",
+        "inte": "true",
+        "property": "payload",
+        "x": 1300,
+        "y": 800,
+        "wires": [
+            [
+                "4c682b8c.15aa4c"
+            ]
+        ],
+        "icon": "node-red-dashboard/ui_gauge.png"
+    },
+    {
+        "id": "6098533c.256c9c",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "oscilacia ventilatora",
+        "info": "",
+        "x": 150,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "40fc2d97.bbd01c",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "random high",
+        "pauseType": "random",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "5",
+        "randomLast": "20",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 670,
+        "y": 800,
+        "wires": [
+            [
+                "857e14f6.d191d"
+            ]
+        ]
+    },
+    {
+        "id": "bce9a538.be6b38",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ventilator_obyvacka_state",
+                "pt": "global",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3f4973.af317e8",
+        "type": "switch",
+        "z": "9eafeed2.d9ba6",
+        "name": "speed",
+        "property": "ventilator_obyvacka_state",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 450,
+        "y": 800,
+        "wires": [
+            [
+                "df68ebf3.73db1"
+            ],
+            [
+                "57c308c.8501178"
+            ],
+            [
+                "40fc2d97.bbd01c"
+            ],
+            [
+                "857e14f6.d191d"
+            ]
+        ],
+        "outputLabels": [
+            "low",
+            "mid",
+            "high",
+            "off"
+        ]
+    },
+    {
+        "id": "57c308c.8501178",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "random mid",
+        "pauseType": "random",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "10",
+        "randomLast": "20",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 670,
+        "y": 760,
+        "wires": [
+            [
+                "857e14f6.d191d"
+            ]
+        ]
+    },
+    {
+        "id": "df68ebf3.73db1",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "random low",
+        "pauseType": "random",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "15",
+        "randomLast": "40",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 670,
+        "y": 720,
+        "wires": [
+            [
+                "857e14f6.d191d"
+            ]
+        ]
+    },
+    {
+        "id": "857e14f6.d191d",
+        "type": "api-current-state",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka oscilacia state",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "switch.ventilator_obyvacka_oscilacia",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": true,
+        "x": 1020,
+        "y": 820,
+        "wires": [
+            [
+                "7d274861.8eb838"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "92434412.68661",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "stav ventilatora - nastavena rychlost z MQTT",
+        "info": "",
+        "x": 790,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "4c682b8c.15aa4c",
+        "type": "switch",
+        "z": "9eafeed2.d9ba6",
+        "name": "same speed?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "ventilator_obyvacka_state",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "ventilator_obyvacka_state",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1290,
+        "y": 880,
+        "wires": [
+            [
+                "dd93f711.3a511",
+                "4858339d.42981c"
+            ],
+            [
+                "7d274861.8eb838"
+            ]
+        ],
+        "outputLabels": [
+            "ok",
+            "same speed"
+        ]
+    },
+    {
+        "id": "dd93f711.3a511",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 660,
+        "y": 900,
+        "wires": [
+            [
+                "c403d41e.a7a0f"
+            ]
+        ]
+    },
+    {
+        "id": "3d2b3eac.8f8892",
+        "type": "switch",
+        "z": "9eafeed2.d9ba6",
+        "name": "speed",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "{\"FanSpeed\":1}",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "{\"FanSpeed\":2}",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "{\"FanSpeed\":3}",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "{\"FanSpeed\":0}",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 450,
+        "y": 1060,
+        "wires": [
+            [
+                "bce9a538.be6b38",
+                "a67bc8ab.9e6f6"
+            ],
+            [
+                "e2312580.74e3c",
+                "8b26af88.b62f58"
+            ],
+            [
+                "a66c736d.d88588",
+                "8eeee178.6bf148"
+            ],
+            [
+                "3ca825f9.65e9ea",
+                "bfef03fd.abaf2"
+            ]
+        ],
+        "outputLabels": [
+            "low",
+            "mid",
+            "high",
+            "off"
+        ]
+    },
+    {
+        "id": "e2312580.74e3c",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ventilator_obyvacka_state",
+                "pt": "global",
+                "to": "2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a66c736d.d88588",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ventilator_obyvacka_state",
+                "pt": "global",
+                "to": "3",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ca825f9.65e9ea",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ventilator_obyvacka_state",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1c95ba7.03eeb8",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "frekvencia oscilacii podla rychlosti ventilatora",
+        "info": "",
+        "x": 570,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5a33ae51.79db58",
+        "type": "comment",
+        "z": "9eafeed2.d9ba6",
+        "name": "prepinanie rychlosti v UI z MQTT koli RF433",
+        "info": "",
+        "x": 780,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "a67bc8ab.9e6f6",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1240,
+        "wires": [
+            [
+                "4a3f3133.db0d88"
+            ]
+        ]
+    },
+    {
+        "id": "8b26af88.b62f58",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1280,
+        "wires": [
+            [
+                "8e87000f.6a94b8"
+            ]
+        ]
+    },
+    {
+        "id": "8eeee178.6bf148",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1320,
+        "wires": [
+            [
+                "adb354f8.5503a8"
+            ]
+        ]
+    },
+    {
+        "id": "bfef03fd.abaf2",
+        "type": "change",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1360,
+        "wires": [
+            [
+                "3434f0f5.721358"
+            ]
+        ]
+    },
+    {
+        "id": "30194e86.2482d2",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 1. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_1_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1230,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8639c404.603d78",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 2. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_2_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1230,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1663b8b6.27f54f",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "obyvacka ventilator 3. rychlost state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.obyvacka_ventilator_3_rychlost",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1230,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e53609c.a284a8",
+        "type": "api-call-service",
+        "z": "9eafeed2.d9ba6",
+        "name": "UI ventilator obyvacka off state change",
+        "server": "d48ee4c6.6493a8",
+        "version": 1,
+        "debugenabled": true,
+        "service_domain": "homeassistant",
+        "service": "turn_{{payload}}",
+        "entityId": "switch.ventilator_obyvacka_onoff",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1210,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a3f3133.db0d88",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 920,
+        "y": 1240,
+        "wires": [
+            [
+                "30194e86.2482d2"
+            ]
+        ]
+    },
+    {
+        "id": "8e87000f.6a94b8",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 920,
+        "y": 1280,
+        "wires": [
+            [
+                "8639c404.603d78"
+            ]
+        ]
+    },
+    {
+        "id": "adb354f8.5503a8",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 920,
+        "y": 1320,
+        "wires": [
+            [
+                "1663b8b6.27f54f"
+            ]
+        ]
+    },
+    {
+        "id": "3434f0f5.721358",
+        "type": "delay",
+        "z": "9eafeed2.d9ba6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 920,
+        "y": 1360,
+        "wires": [
+            [
+                "8e53609c.a284a8"
+            ]
+        ]
+    },
+    {
+        "id": "d48ee4c6.6493a8",
+        "type": "server",
+        "z": "",
+        "name": "Home Assistant",
+        "legacy": false,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": false,
+        "cacheJson": true
+    },
+    {
+        "id": "5ef8035b.c7d07c",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "hass_mqtt",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
