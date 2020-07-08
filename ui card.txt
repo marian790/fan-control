@@ -1,0 +1,47 @@
+  - type: horizontal-stack
+    cards:
+      - type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        show_icon: true
+        show_name: true
+        entity: switch.ventilator_obyvacka_onoff
+        name: 'off'
+      - type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        show_icon: true
+        show_name: true
+        entity: switch.obyvacka_ventilator_1_rychlost
+        name: low
+      - type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        show_icon: true
+        show_name: true
+        entity: switch.obyvacka_ventilator_2_rychlost
+        name: mid
+      - type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        show_icon: true
+        show_name: true
+        entity: switch.obyvacka_ventilator_3_rychlost
+        name: high
+      - type: button
+        tap_action:
+          action: toggle
+        hold_action:
+          action: none
+        show_icon: true
+        show_name: true
+        entity: switch.ventilator_obyvacka_oscilacia
+        name: osc
